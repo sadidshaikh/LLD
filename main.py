@@ -1,18 +1,9 @@
-from Design_Patterns.Creational_Patterns.Abstract_Factory_Method.Creator import *
-
-
-def client_code(factory: AbstractFactory):
-    product_a = factory.create_product_a()
-    product_b = factory.create_product_b()
-    print(product_b.useful_function_b())
-    print(product_b.another_useful_function_b(product_a))
-
+from Design_Patterns.Creational_Patterns.Builder.Builder import *
 
 if __name__ == "__main__":
-    print("Client: Testing client code with the first factory type:")
-    client_code(ConcreteFactory1())
-
-    print("\n")
-
-    print("Client: Testing the same client code with the second factory type:")
-    client_code(ConcreteFactory2())
+    builder = ConcreteBuilder1()
+    builder.product_part_b()
+    builder.product_part_a()
+    builder.product_part_c()
+    product = builder.product()
+    product.list_parts()
