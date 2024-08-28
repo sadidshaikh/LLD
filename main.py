@@ -1,13 +1,12 @@
-from Design_Patterns.Structural_Patterns.Adapter.RoundHole import RoundHole
-from Design_Patterns.Structural_Patterns.Adapter.RoundPeg import RoundPeg
-from Design_Patterns.Structural_Patterns.Adapter.SquarePeg import SquarePeg
-from Design_Patterns.Structural_Patterns.Adapter.SquarePegAdapter import SquarePegAdapter
+from Design_Patterns.Behavioral_Patterns.Strategy.Context import Context
+from Design_Patterns.Behavioral_Patterns.Strategy.Strategy import ConcreteStrategyA, ConcreteStrategyB
 
 if __name__ == "__main__":
-    round_hole = RoundHole(5)
+    context = Context(ConcreteStrategyA())
+    print("Client: Strategy is set to normal sorting.")
+    context.do_some_business_logic()
+    print()
 
-    round_peg = RoundPeg(4)
-    print(round_hole.fits(round_peg))
-
-    square_round_peg = SquarePegAdapter(SquarePeg(12))
-    print(round_hole.fits(square_round_peg))
+    print("Client: Strategy is set to reverse sorting.")
+    context.strategy = ConcreteStrategyB()
+    context.do_some_business_logic()
