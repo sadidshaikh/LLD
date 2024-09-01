@@ -1,9 +1,6 @@
 from datetime import datetime
 
-from LLD.Stack_Overflow.Comment import Comment
 from LLD.Stack_Overflow.Commentable import Commentable
-from LLD.Stack_Overflow.Question import Question
-from LLD.Stack_Overflow.User import User
 from LLD.Stack_Overflow.Votable import Votable
 from LLD.Stack_Overflow.Vote import Vote
 
@@ -12,7 +9,7 @@ class Answer(Commentable, Votable):
     VOTE_REPUTATION = 10
     ACCEPTED_REPUTATION = 15
 
-    def __init__(self, author: User, content: str, question: Question):
+    def __init__(self, author, content: str, question):
         self.id = id(self)
         self.author = author
         self.content = content
@@ -22,7 +19,7 @@ class Answer(Commentable, Votable):
         self.comments = []
         self.is_accepted = False
 
-    def vote(self, user: User, value: int):
+    def vote(self, user, value: int):
         if value not in {-1, 1}:
             raise ValueError("Vote value must be either 1 or -1")
         self.votes = [v for v in self.votes if v.user != self.author]
@@ -32,7 +29,7 @@ class Answer(Commentable, Votable):
     def get_vote_count(self):
         return sum(v.value for v in self.votes)
 
-    def add_comment(self, comment: Comment):
+    def add_comment(self, comment):
         self.comments.append(comment)
 
     def get_comments(self):

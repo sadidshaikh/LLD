@@ -1,5 +1,4 @@
 from LLD.Stack_Overflow.Answer import Answer
-from LLD.Stack_Overflow.Commentable import Commentable
 from LLD.Stack_Overflow.Question import Question
 from LLD.Stack_Overflow.Comment import Comment
 
@@ -24,13 +23,13 @@ class User:
         self.update_reputation(User.QUESTION_REPUTATION)
         return question
 
-    def answer_question(self, question: Question, content: str):
+    def answer_question(self, question, content: str):
         answer = Answer(self, content, question)
         self.answers.append(answer)
         self.update_reputation(User.ANSWER_REPUTATION)
         return answer
 
-    def comment_on(self, commentable: Commentable, content: str):
+    def comment_on(self, commentable, content: str):
         comment = Comment(self, content)
         self.comments.append(comment)
         commentable.add_comment(comment)
