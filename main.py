@@ -1,4 +1,4 @@
-from LLD.Stack_Overflow.StackOverflowDemo import StackOverflowDemo
+from Design_Patterns.Behavioral_Patterns.Observer.Demo import Demo
 
 if __name__ == "__main__":
-    StackOverflowDemo.run()
+    Demo.run()

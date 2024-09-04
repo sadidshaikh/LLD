@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67f077c4-7245-4a77-80ea-2e85f21778f1" name="Changes" comment="Design StackOverflow">
-      <change afterPath="$PROJECT_DIR$/LLD/Stack_Overflow/StackOverflowDemo.py" afterDir="false" />
+    <list default="true" id="67f077c4-7245-4a77-80ea-2e85f21778f1" name="Changes" comment="Implement StackOverflow Service and Demo classes">
+      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/Demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/Editor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/EmailNotificationListener.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/EventListener.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/EventManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/LogOpenListener.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/Stack_Overflow/Answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/LLD/Stack_Overflow/Answer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/Stack_Overflow/Question.py" beforeDir="false" afterPath="$PROJECT_DIR$/LLD/Stack_Overflow/Question.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/Stack_Overflow/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/LLD/Stack_Overflow/User.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +55,8 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Python.Creator.executor": "Run",
+    "Python.Demo.executor": "Run",
+    "Python.Editor.executor": "Run",
     "Python.StackOverflowDemo.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -88,7 +93,10 @@
       <updated>1724566601318</updated>
       <workItem from="1724566602487" duration="26643000" />
       <workItem from="1724823631895" duration="11689000" />
-      <workItem from="1724995897912" duration="29955000" />
+      <workItem from="1724995897912" duration="37397000" />
+      <workItem from="1725282067343" duration="1194000" />
+      <workItem from="1725339721615" duration="5063000" />
+      <workItem from="1725353125296" duration="7181000" />
     </task>
     <task id="LOCAL-00001" summary="Set up project">
       <option name="closed" value="true" />
@@ -186,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725129145208</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implement StackOverflow Service and Demo classes">
+      <option name="closed" value="true" />
+      <created>1725174737245</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1725174737245</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,11 +241,14 @@
     <MESSAGE value="Understand and implement Adapter design pattern" />
     <MESSAGE value="Understand and implement Strategy design pattern" />
     <MESSAGE value="Design StackOverflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design StackOverflow" />
+    <MESSAGE value="Implement StackOverflow Service and Demo classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement StackOverflow Service and Demo classes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$StackOverflowDemo.coverage" NAME="StackOverflowDemo Coverage Results" MODIFIED="1725174427455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LLD/Stack_Overflow" />
-    <SUITE FILE_PATH="coverage/OOP$main.coverage" NAME="main Coverage Results" MODIFIED="1725174695856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OOP$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1725426263525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer" />
+    <SUITE FILE_PATH="coverage/OOP$main.coverage" NAME="main Coverage Results" MODIFIED="1725426265897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OOP$Editor.coverage" NAME="Editor Coverage Results" MODIFIED="1725426056845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer" />
     <SUITE FILE_PATH="coverage/OOP$Creator.coverage" NAME="Creator Coverage Results" MODIFIED="1724658843207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_Patterns/Creational_Patterns/Factory_Method" />
   </component>
 </project>
