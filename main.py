@@ -1,4 +1,4 @@
-from Design_Patterns.Behavioral_Patterns.Observer.Demo import Demo
+from LLD.Parking_Lot.Parking_Log_Demo import ParkingLotDemo
 
 if __name__ == "__main__":
-    Demo.run()
+    ParkingLotDemo.run()

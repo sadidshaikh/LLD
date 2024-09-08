@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67f077c4-7245-4a77-80ea-2e85f21778f1" name="Changes" comment="Implement StackOverflow Service and Demo classes">
-      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/Demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/Editor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/EmailNotificationListener.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/EventListener.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/EventManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/LogOpenListener.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer/__init__.py" afterDir="false" />
+    <list default="true" id="67f077c4-7245-4a77-80ea-2e85f21778f1" name="Changes" comment="Implement and understand Observer pattern">
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Car.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Level.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Motorcycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Parking_Log_Demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Parking_Lot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Parking_Spot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Truck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/Vehicle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/VehicleType.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLD/Parking_Lot/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -57,6 +60,7 @@
     "Python.Creator.executor": "Run",
     "Python.Demo.executor": "Run",
     "Python.Editor.executor": "Run",
+    "Python.Level.executor": "Run",
     "Python.StackOverflowDemo.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -96,7 +100,8 @@
       <workItem from="1724995897912" duration="37397000" />
       <workItem from="1725282067343" duration="1194000" />
       <workItem from="1725339721615" duration="5063000" />
-      <workItem from="1725353125296" duration="7181000" />
+      <workItem from="1725353125296" duration="10227000" />
+      <workItem from="1725729940466" duration="6759000" />
     </task>
     <task id="LOCAL-00001" summary="Set up project">
       <option name="closed" value="true" />
@@ -202,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725174737245</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implement and understand Observer pattern">
+      <option name="closed" value="true" />
+      <created>1725427037131</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725427037131</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,12 +255,25 @@
     <MESSAGE value="Understand and implement Strategy design pattern" />
     <MESSAGE value="Design StackOverflow" />
     <MESSAGE value="Implement StackOverflow Service and Demo classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement StackOverflow Service and Demo classes" />
+    <MESSAGE value="Implement and understand Observer pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement and understand Observer pattern" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP$StackOverflowDemo.coverage" NAME="StackOverflowDemo Coverage Results" MODIFIED="1725174427455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LLD/Stack_Overflow" />
     <SUITE FILE_PATH="coverage/OOP$Demo.coverage" NAME="Demo Coverage Results" MODIFIED="1725426263525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer" />
-    <SUITE FILE_PATH="coverage/OOP$main.coverage" NAME="main Coverage Results" MODIFIED="1725426265897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OOP$Level.coverage" NAME="Level Coverage Results" MODIFIED="1725779090512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LLD/Parking_Lot" />
+    <SUITE FILE_PATH="coverage/OOP$main.coverage" NAME="main Coverage Results" MODIFIED="1725779094926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/OOP$Editor.coverage" NAME="Editor Coverage Results" MODIFIED="1725426056845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_Patterns/Behavioral_Patterns/Observer" />
     <SUITE FILE_PATH="coverage/OOP$Creator.coverage" NAME="Creator Coverage Results" MODIFIED="1724658843207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_Patterns/Creational_Patterns/Factory_Method" />
   </component>
